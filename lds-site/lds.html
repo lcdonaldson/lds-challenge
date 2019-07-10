@@ -59,18 +59,27 @@
 						<picture class="LDSMainlogo"> </picture> 
 					</a> 
 					<div id="PFprefBox"></div> 
-				</div> 
+				</div>
+
 				<div id="PFnavContainer" data-breadcrumbs="false"> 
 					<div id="PFmobileNavControls"> 
 						<span id="PFmobileNavButton"></span> 
 						<span id="PFmobileBreadcrumb"></span> 
-					</div> 
-					<span id="PFsearchIcon" role="button" aria-label="Toggle Search Box Button"> <svg viewBox="0 0 24 24" style="width:24px;height:24px;" xmlns="http://www.w3.org/2000/svg"> <path d="M21.07,19.65l-5-5a7.5,7.5,0,1,0-1.41,1.41l5,5a1,1,0,0,0,1.41-1.41Zm-6.72-5.3a6,6,0,1,1,0-8.49A6,6,0,0,1,14.35,14.35Z"></path> </svg> </span> 
+					</div>
+
+					<span id="PFsearchIcon" role="button" aria-label="Toggle Search Box Button"> 
+						<svg viewBox="0 0 24 24" style="width:24px;height:24px;" xmlns="http://www.w3.org/2000/svg"> 
+							<path d="M21.07,19.65l-5-5a7.5,7.5,0,1,0-1.41,1.41l5,5a1,1,0,0,0,1.41-1.41Zm-6.72-5.3a6,6,0,1,1,0-8.49A6,6,0,0,1,14.35,14.35Z"></path> 
+						</svg>
+						<!--*** THIS IS A NEW REACT COMPONENT ***-->
+						<div id="react_search_container"></div>
+					</span>
+
 					<nav id="PFmainNav"> 
 						<ul id="PFmainNavLinks"></ul> 
-					</nav> 
+					</nav>
 					<div id="PFoverlay"></div> 
-				</div> 
+				</div>
 				<div id="PFsearchContainer"> 
 					<form id="PFsearchForm"> 
 						<input tabindex="-1" type="text" autocomplete="off" id="PFsearchBox" form="PFsearchForm" inputmode="text" list="PFsearchSuggest" aria-label="Search Form"> 
@@ -360,7 +369,15 @@
 			LDS.page = 'http://lds.org';
 		</script>
 
-		<script src="//edge.ldscdn.org/cdn2/csp/ldsorg/home/scripts/strata.min.js" type="text/javascript" charset="utf-8"></script>				
+		<script src="//edge.ldscdn.org/cdn2/csp/ldsorg/home/scripts/strata.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--*** THIS IS NEW TOO ***-->
+
+		<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<!-- Load our React component. -->
+		<script src="react_search_container.js" type="text/babel"></script>
 	</body>
 
 </html>
