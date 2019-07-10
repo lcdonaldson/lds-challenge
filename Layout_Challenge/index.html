@@ -1,0 +1,77 @@
+<div class="wrapper">
+	<header class="header">Header</header>
+	<main class="main">
+		<center>Body</center>
+		<h2>1 - Fix this layout</h2>
+		<p>Fix this layout using Flexbox so that the header, body, left and right sides, and footer are in the correct locations. </p>
+
+		<h2>2 - What is my color?</h2>
+		<p>Given the following HTML and CSS, what will be the color of text? </p>
+		<div id="mywrapper">
+			<p id="myId" class="myClass">
+			What is my <span>color?</span>
+			</p>
+		</div>
+		<pre>
+			<code class='html'>
+			&lt;div id="mywrapper"&gt;
+				&lt;p id="myId" class="myClass"&gt;
+				What is my &lt;span&gt;color?&lt;/span&gt;
+				&lt;/p&gt;
+			&lt;/div&gt;
+			</code>
+		</pre>
+
+		<pre>
+			<code class='css'>
+			#mywrapper p{
+				color:orange;
+			}
+			#myId {
+				color:blue;
+			}
+			.myClass {
+				color:green;
+			}
+			#mywrapper div p {
+				color:pink;
+			}
+			</code>
+		</pre>
+
+		<h2>3 - Javascript Challenge 1</h2>
+		<p>
+			<h3>Find the Shortest Word(s) in a Sentence</h3>
+		</p>
+		<p>Create a function that accepts a string as an argument. Find its shortest word(s) and return them as an array sorted alphabetically (if there are multiple shortest words).</p>
+		<p>
+			<h4>Rules</h4>
+			<ul>
+				<li>Periods, commas and other special characters don't count as part of a word's length.</li>
+				<li>Return words in lowercase only.</li>
+				<li>Sort words alphabetically.</li>
+			</ul>
+		</p>
+		<h4>Examples</h4>
+		<pre class="example">
+			<code>"The quick brown fox jumped over the lazy dogs back." ➞ ['fox', 'the', 'the'] 
+			"I think the solution is fairly obvious." ➞ ['i']
+			"Chase two rabbits, catch none." ➞ ['two']
+			"We become what we think about." ➞ ['we', 'we']</code>
+		</pre>
+		<h4>Javascript Test Results</h4>
+		<div id='resultWindow'></div>
+
+		<h2>4 - Javascript Challenge 2</h2>
+		<p>Head on over to this <a href='https://codepen.io/robertwbradford/pen/LaQvNW' target='_blank'>codepen</a> for the next challenge </p>
+	</main>
+	<aside class="aside left-side">Left Side</aside>
+	<aside class="aside right-side">Right Side</aside>
+	<footer class="footer">Footer</footer>
+</div>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>
+	hljs.initHighlightingOnLoad();
+</script>

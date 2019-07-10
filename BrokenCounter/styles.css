@@ -1,0 +1,62 @@
+:root {
+    --primary-bkgrd: #e5e5e5;
+    --primary: #67b7b7;
+    --secondary: #f1a924;
+    --tertiary: #0076e6b3;
+}
+
+body {
+    background-color: var(--primary-bkgrd);
+}
+
+.container {
+    display: flex;
+    max-width: 18rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.containerSkin {
+    border-radius: 2rem;
+    background-color: #fff;
+    border: 0.2em solid var(--primaryBkgrd);
+}
+
+.btnLayout {
+    height: 2rem;
+    width: 3.3rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.btnSkin {
+    font-weight: bold;
+    color: #fff;
+    outline: none;
+}
+
+.inc {
+    background-color: var(--primary);
+}
+
+.dec {
+    background-color: var(--secondary);
+}
+
+.reset {
+    background-color: var(--tertiary);
+    font-size: 0.8em;
+}
+
+.counterWrapper {
+    height: 2rem;
+    width: 2rem;
+}
+
+.counterTextLayout {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5em;
+}
