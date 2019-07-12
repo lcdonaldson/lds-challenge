@@ -11,7 +11,7 @@
 		<link rel="preconnect" href="https://edge.ldscdn.org"> 
 		<link rel="preconnect" href="https://abn.ldschurch.org"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com/"> 
-		{% comment %} <link href="https://www.churchofjesuschrist.org/services/platform/v3/assets/main.d2070829.css" rel="stylesheet" type="text/css">  {% endcomment %}
+		<link href="https://www.churchofjesuschrist.org/services/platform/v3/assets/main.d2070829.css" rel="stylesheet" type="text/css">
 		<meta property="fb:pages" content="18523396549"> 
 		<meta property="fb:pages" content="120694114630885"> 
 		<script>window.Platform={},window.PlatformService={langs: []};</script> 
@@ -23,15 +23,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!-- forces IE to play nice -->
 		<link rel="shortcut icon" href="//edge.ldscdn.org/cdn2/common/images/logos/favicon-lds-1.ico">
 		
-		{% comment %} <link href="https://www.churchofjesuschrist.org/services/platform/v3/assets/main.d2070829.css" rel="stylesheet" type="text/css"> {% endcomment %}
 		<link href="main.d2070829.css" rel="stylesheet" type="text/css">
 		<!-- Prototype only: The following should be included on pages that are responsive -->
 		<!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		{% comment %} <link rel="stylesheet" type="text/css" media="all" href="//edge.ldscdn.org/cdn2/csp/ldsorg/css/common/lds-old.css"> {% endcomment %}
 		<link rel="stylesheet" type="text/css" media="all" href="lds-old.css">
+		<link rel="stylesheet" type="text/css" media="all" href="icon.css">
 		<script src="//edge.ldscdn.org/cdn2/common/scripts/jquery/1.7.1/jquery.min.js"></script>
 		<script src="//edge.ldscdn.org/cdn2/csp/ldsorg/script/common/lds.js"></script>
 		<script type="text/javascript">
@@ -40,8 +39,10 @@
 					removeLegacyScripts: true
 				}
 			}
+			slideIn = (e) => {
+				document.getElementById('tool-nav').classList.toggle('open-slide');
+			}
 		</script>
-		{% comment %} <link rel="stylesheet" type="text/css" media="all" href="//edge.ldscdn.org/cdn2/csp/ldsorg/home/css/strata.css"> {% endcomment %}
 		<link rel="stylesheet" type="text/css" media="all" href="strata.css">
 
 		<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
@@ -72,55 +73,46 @@
 							<path d="M21.07,19.65l-5-5a7.5,7.5,0,1,0-1.41,1.41l5,5a1,1,0,0,0,1.41-1.41Zm-6.72-5.3a6,6,0,1,1,0-8.49A6,6,0,0,1,14.35,14.35Z"></path> 
 						</svg>
 						<!--*** THIS IS A NEW REACT COMPONENT ***-->
-						<span style="" onclick="console.log('hi')">
+						<span onclick="slideIn()">
 							<div id="react_search_container"></div>
 						</span>
-						
 					</span>
 
-					
-
-
-					<div style="
-						display: grid;
-						background-color: magenta;
-						padding: 10px;
-						min-width: 275px;
-						position: absolute;
-						top: 2.5rem;
-						height: 85vh;">
-
-						<div style="height: 52px; width: 48px;background-color:yellow;"></div>
-						<div style="height: 52px; width: 48px;background-color:red;"></div>
-						<div style="height: 52px; width: 48px;background-color:blue;"></div>
-						<div style="height: 52px; width: 48px;background-color:green;"></div>
-						<div style="height: 52px; width: 48px;background-color:orange;"></div>
-						<div style="height: 52px; width: 48px;background-color:purple;"></div>
-
-						<!-- <div id="ab-icons"><a href="https://www.lds.org/donations/">
-								<img src="http://abn.ldschurch.org/static/icons/tools/donate.svg">
-								<span>Donations</span>
-							</a><a href="https://www.lds.org/mls/mbr/?lang=eng">
-								<img src="http://abn.ldschurch.org/static/icons/tools/leader.svg">
-								<span>Leader and Clerk</span>
-							</a><a href="https://www.lds.org/directory/?lang=eng">
-								<img src="http://abn.ldschurch.org/static/icons/tools/directory.svg">
-								<span>Directory and Map</span>
-							</a><a href="https://www.lds.org/calendar/?lang=eng">
-								<img src="http://abn.ldschurch.org/static/icons/tools/calendar.svg">
-								<span>Calendar</span>
-							</a><a href="https://missionary.lds.org/">
-								<img src="http://abn.ldschurch.org/static/icons/tools/missionary.svg">
-								<span>Missionary Portal</span>
-							</a><a href="https://www.lds.org/maps/meetinghouses/">
-								<img src="http://abn.ldschurch.org/static/icons/tools/church.svg">
-								<span>Find a Church</span>
+					<div id="tool-nav" class="tool-menu-wrapper">
+						<span class="tool-menu-title">
+							Tools and Support
+						</span>
+						<div class="tool-menu">
+							
+							<a class="tool-menu-link" href="https://www.lds.org/donations/">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/donate.svg">
+								<span class="tool-menu-text">Donations</span>
 							</a>
-						</div>  -->
+							<a class="tool-menu-link" href="https://www.lds.org/mls/mbr/?lang=eng">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/leader.svg">
+								<span class="tool-menu-text">Leader and Clerk</span>
+							</a>
+							<a class="tool-menu-link" href="https://www.lds.org/directory/?lang=eng">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/directory.svg">
+								<span class="tool-menu-text">Directory and Map</span>
+							</a>
+							<a class="tool-menu-link" href="https://www.lds.org/calendar/?lang=eng">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/calendar.svg">
+								<span class="tool-menu-text">Calendar</span>
+							</a>
+							<a class="tool-menu-link" href="https://missionary.lds.org/">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/missionary.svg">
+								<span class="tool-menu-text">Missionary Portal</span>
+							</a>
+							<a class="tool-menu-link" href="https://www.lds.org/maps/meetinghouses/">
+								<img class="tool-menu-icon" src="http://abn.ldschurch.org/static/icons/tools/church.svg">
+								<span class="tool-menu-text">Find a Church</span>
+							</a>
+						</div>
+						<div style="text-align:center;">
+							<a tabindex="0" style="width: 100%;" class="button secondary-button wide" href="https://www.lds.org/myaccount?lang=eng">All Tools</a>
+						</div>
 					</div>
-
-
-
 
 
 					<nav id="PFmainNav"> 
@@ -426,6 +418,7 @@
 		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 		<!-- Load our React component. -->
 		<script src="react_search_container.js" type="text/babel"></script>
+		
 	</body>
 
 </html>

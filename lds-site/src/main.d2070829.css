@@ -706,7 +706,7 @@ header.LDSORG #PFsearchIcon svg {
 }
 
 header.LDSORG #PFsearchIcon:hover {
-    background-color: var(--grey3);
+    background-color: transparent!important;
 }
 
 header.LDSORG #PFsearchContainer {

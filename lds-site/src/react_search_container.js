@@ -10,7 +10,6 @@ const dialPadStyle = {
 class SearchContainer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
     }
 
     render() {
@@ -22,7 +21,7 @@ class SearchContainer extends React.Component {
                 </svg>
             </div>
         );
-    }
+    };
 }
 const domContainer = document.querySelector('#react_search_container');
 ReactDOM.render(e(SearchContainer), domContainer);
