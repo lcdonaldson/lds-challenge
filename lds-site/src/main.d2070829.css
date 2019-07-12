@@ -680,25 +680,13 @@ header.LDSORG #PFmainNav li.topNavItem[active] .navArrow {
 }
 
 header.LDSORG #PFsearchIcon {
+    /* display: flex;
+    border-radius: 0;
+    right: 40px !important; */
     display: flex;
     border-radius: 0;
     width: 65px;
     right: 10px !important;
-    /* background-size: 24px 24px;
-    background-size: var(--headerSpacing24) var(--headerSpacing24);
-    background-position: 50%;
-    height: 32px;
-    height: var(--headerSpacing32);
-    width: 32px;
-    width: var(--headerSpacing32);
-    padding: 4px;
-    padding: var(--headerSpacing4);
-    position: absolute;
-    right: 8px;
-    right: var(--headerSpacing8);
-    top: 4px;
-    border-radius: 50%;
-    cursor: pointer */
 }
 
 header.LDSORG #PFsearchIcon svg {

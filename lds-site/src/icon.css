@@ -1,5 +1,9 @@
 span { outline: 0;}
-
+.dial-pad-icon {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
 .tool-menu-wrapper {
     width: 285px;
     position: absolute;
