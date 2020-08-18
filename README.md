@@ -17,7 +17,7 @@ To run the project just open lds.html in a browser and you should be able to eva
     
 *** Important ***  
 
-On lds.html if you uncomment 76-78 and then comment out 80-87 you will see the react version on firefox. I didn’t have chrome or safari up for a lot of the development so by the time I discovered it wasn’t running on those browsers it was too late to try and fix. I assume its something small but maybe next time.
+On lds.html if you uncomment 76-78 and then comment out 80-87 you will see the react version on firefox. I didn’t have chrome or safari up for a lot of the development so by the time I discovered it wasn’t running on those browsers it was too late to try and fix. 
 
 I took most of the code from a page inspection and then copied some of the external css files. I noticed most of the code was available if I opened the website on different browsers. Having said that I actually coded the tools menu myself. I found some minor issues later on that could have been polished with more time but its functional and it looks ok. I made a decision to do a different behavior on hover of the icons. just wanted to try something different.
 
