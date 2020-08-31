@@ -23,4 +23,4 @@ I took most of the code from a page inspection and then copied some of the exter
 
 There was one HUGE PROBLEM though in the project. On lds.html line 62 the div tag with id="PFprefBox" is present on inspection but has nothing in it. However the inspection shows substantial code for the navigation. I was not able to remove the tools section from the code because I could not find it. I was able to copy it from the inspection and use it for the tools menu. But I couldn't remove that code in the project. I am puzzled as to how that code is showing up.
 
-This made it impossible to complete the other part of the challenge. I would love to know where this code actually resides.
+This made it impossible to complete the other part of the challenge. The location where this code actually resides is vital to finishing this project.
