@@ -15,7 +15,7 @@ Having said that my biggest challenge was simply time and knowing that I just di
 
 To run the project just open lds.html in a browser and you should be able to evaluate.
     
-*** Important ***  
+*** Important for this project ***  
 
 In the lds.html file if you uncomment 76-78 and then comment out 80-87 you will see the react version on firefox. I didn’t have chrome or safari up for a lot of the development so by the time I discovered it wasn’t running on those browsers it was too late to try and fix. 
 
