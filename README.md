@@ -17,10 +17,4 @@ To run the project just open lds.html in a browser and you should be able to eva
     
 *** Important for this project ***  
 
-In the lds.html file if you uncomment 76-78 and then comment out 80-87 you will see the react version on firefox. I didn’t have chrome or safari up for a lot of the development so by the time I discovered it wasn’t running on those browsers it was too late to try and fix. 
-
-I took most of the code from a page inspection and then copied some of the external css files. I noticed most of the code was available if I opened the website on different browsers. Having said that I actually coded the tools menu myself. I found some minor issues later on that could have been polished with more time but its functional to this point. I made a decision to do a different behavior on hover of the icons. just wanted to try something different.
-
-There was one HUGE PROBLEM though in the project. On lds.html line 62 the div tag with id="PFprefBox" is present on inspection but has nothing in it. However the inspection shows substantial code for the navigation. I was not able to remove the tools section from the code because I could not find it. I was able to copy it from the inspection and use it for the tools menu. But I couldn't remove that code in the project. I am puzzled as to how that code is showing up.
-
-This made it impossible to complete the other part of the challenge. The location where this code actually resides is vital to finishing this project.
+Access issues to code that was not reachable made it impossible to complete the requirements list.
