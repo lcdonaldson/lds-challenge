@@ -4,7 +4,7 @@ https://codepen.io/lcdpen/pen/ewbKbX?editors=1010
 
 https://codepen.io/lcdpen/pen/mZQzyP
 
-Notes on the final project
+Notes on this challenge project
 
 This is not perfect by any means but here is some info on the project during development.
 
